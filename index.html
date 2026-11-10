@@ -8,13 +8,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cratis Direct — The control plane for agentic engineering</title>
-    <meta name="description" content="Direct governs how AI agents work on your software: journeys with assurance gates, classified backlogs, production signals that trigger investigations, and content that ships with the release. Coming soon." />
-    <meta name="theme-color" content="#181818" />
+    <meta name="description" content="Direct governs how AI agents work on your software: journeys with assurance gates, an autonomy ladder from delivery to verified fixes, an inbox for what only a person can resolve, and content that ships with the release. Coming soon." />
+    <meta name="theme-color" content="#0f172a" />
     <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
     <meta property="og:title" content="Cratis Direct — Agents do the work. Direct decides how far it goes." />
-    <meta property="og:description" content="The control plane for agentic engineering. Journeys, assurance gates, production investigations, content and strategy in one governed system." />
+    <meta property="og:description" content="The control plane for agentic engineering. Journeys, assurance gates, an autonomy ladder from delivery to verified fixes, content and strategy in one governed system." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/img/journeys.png" />
+    <meta property="og:image" content="assets/img/today.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,12 +31,12 @@
             Direct <small>by Cratis</small>
         </a>
         <nav class="nav-links" aria-label="Primary">
-            <a class="link" href="#model">Model</a>
+            <a class="link" href="#model">Ladder</a>
             <a class="link" href="#journeys">Journeys</a>
             <a class="link" href="#assurance">Assurance</a>
-            <a class="link" href="#classification">Classification</a>
-            <a class="link" href="#operations">Operations</a>
+            <a class="link" href="#operations">Operate</a>
             <a class="link" href="#content">Content</a>
+            <a class="link" href="#modules">Modules</a>
             <a class="link" href="#roadmap">Roadmap</a>
             <span class="pill">Coming soon</span>
             <a class="btn btn-primary" href="https://app.cratis.direct">Log in</a>
@@ -56,14 +56,14 @@
             <a class="btn btn-primary btn-lg" href="https://app.cratis.direct">Log in to Direct</a>
             <a class="btn btn-ghost btn-lg" href="#model">See how it works</a>
         </div>
-        <div class="hero-note">Coming soon · tracking 55 Cratis repositories today</div>
+        <div class="hero-note">Coming soon · it runs our own engineering today</div>
 
         <div class="hero-shot reveal">
             <div class="frame">
-                <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/journeys</span></div>
-                <img src="assets/img/journeys.png" alt="The Direct Journeys board: every issue as a card in Intake, Investigation, Plan, Implementation or Release, with the things that need a person called out." width="1440" height="900" />
-            </div>
-            <p class="caption"><b>Real screenshot from production.</b> The Journeys board with our own backlog on it. Cards that need a person are flagged; cards blocked by reality — like an issue closed mid-journey — say so.</p>
+                    <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/global</span></div>
+                    <img src="assets/img/today.png" alt="The Direct Today page: a headline counting the things that need a person, tiles for agents working, failing builds and what shipped overnight, and the items that need you." width="1440" height="900" />
+                </div>
+            <p class="caption"><b>Real screenshot from production.</b> Today, the front door. Direct doesn't open on everything; it opens on what only a person can resolve, and says that everything else is moving.</p>
         </div>
     </div>
 </section>
@@ -101,51 +101,82 @@
     <div class="wrap">
         <div class="section-head reveal">
             <span class="eyebrow">What Direct is</span>
-            <h2>Five loops. One governed system.</h2>
-            <p>Most tools automate one loop — usually the one that writes code. Engineering is more than that. Direct runs the whole cycle from intent to production and back, and gives each loop the same guardrails: a person decides, the rules are visible, the history is kept.</p>
+            <h2>Five rungs. Climb as far as you trust them.</h2>
+            <p>Most tools automate one loop: the one that writes code. Engineering is more than that. Direct covers the whole cycle from intent to production and back, and each rung lets agents take on more of the work. Every rung has the same guardrails: a person decides, the rules are visible, the history is kept.</p>
         </div>
 
         <div class="loops reveal">
             <div class="loop core">
-                <span class="n">01</span>
+                <span class="n">Rung 1</span>
                 <h3>Deliver</h3>
-                <span class="sub">ADLC · journeys</span>
-                <p>The Agentic Development Lifecycle. Issues move from intake through investigation, plan, implementation and release, up to a ceiling you set.</p>
+                <span class="sub">issues → released code</span>
+                <p>Backlog, stories, journeys, pull requests and failed builds. Issues move from intake through investigation, plan, implementation and release, behind gates, up to a ceiling you set.</p>
             </div>
             <div class="loop core">
-                <span class="n">02</span>
-                <h3>Assure</h3>
-                <span class="sub">gates · rules · evidence</span>
-                <p>The assurance engine. Each stage ends at a gate. Rules evaluate evidence. Unknown never means yes.</p>
+                <span class="n">Rung 2</span>
+                <h3>Observe</h3>
+                <span class="sub">products · environments · signals</span>
+                <p>Products, the environments they run in and the resources they use, with Prometheus, Loki, Tempo and HTTP signals bound to each.</p>
             </div>
-            <div class="loop">
-                <span class="n">03</span>
-                <h3>Operate</h3>
-                <span class="sub">alerts · investigations</span>
-                <p>Production signals reach an agent with scoped operational access. Findings come back attached to the alert.</p>
+            <div class="loop core">
+                <span class="n">Rung 3</span>
+                <h3>Monitor</h3>
+                <span class="sub">probes · alerts · incidents</span>
+                <p>Probes and webhooks raise alerts. Incidents keep a history and publish reviewed status updates.</p>
             </div>
-            <div class="loop">
-                <span class="n">04</span>
-                <h3>Publish</h3>
-                <span class="sub">content · outlets</span>
-                <p>Blog posts, the weekly digest and talks follow their own journey with their own gates, from brief to verified publication.</p>
+            <div class="loop core">
+                <span class="n">Rung 4</span>
+                <h3>Heal</h3>
+                <span class="sub">investigate · remediate</span>
+                <p>An agent investigates every alert and remediates through the operations gate, within the action policies you set per environment.</p>
             </div>
-            <div class="loop">
-                <span class="n">05</span>
-                <h3>Steer</h3>
-                <span class="sub">vision · roadmap · chains</span>
-                <p>Vision documents ground triage. Roadmap plans are generated from the issues you select. Chains sequence work that depends on a release.</p>
+            <div class="loop core">
+                <span class="n">Rung 5</span>
+                <h3>Fix</h3>
+                <span class="sub">diagnose → journey → verified</span>
+                <p>A diagnosis becomes a governed issue. It is fixed, released and verified by the same probe that raised the alert.</p>
             </div>
         </div>
-        <p class="loop-foot">ADLC is the first loop, not the whole product. We call the whole thing <code>agentic operations</code>: governing agents across delivery, production and communication.</p>
+        <p class="loop-foot"><b>Assure</b> runs through every rung: each stage ends at a gate. Around the ladder sit <b>Publish</b> (content and outlets), <b>Steer</b> (vision, roadmap, deliveries) and <b>Learn</b> (suggestions from what people do). We call the whole thing <code>agentic operations</code>.</p>
     </div>
 </section>
 
-<!-- ═════════ JOURNEYS ═════════ -->
-<section id="journeys">
+<!-- ═════════ ATTENTION ═════════ -->
+<section id="attention">
     <div class="wrap">
         <div class="section-head reveal">
-            <span class="eyebrow">01 · Deliver — the journey</span>
+            <span class="eyebrow">The front door</span>
+            <h2>Finding what needs you. <span class="hl">Everything else is moving.</span></h2>
+            <p>Direct is built for a few people supervising many agents, so it doesn't greet you with everything. It greets you with what only a person can resolve: an agent's question, a gate waiting for review, an alert it couldn't fix, an issue from outside the team.</p>
+        </div>
+        <div class="split top imgleft">
+            <div class="reveal">
+                <div class="frame">
+                    <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/inbox</span></div>
+                    <img src="assets/img/inbox.png" alt="The Direct Inbox: a list of items assigned to you, agent questions and mentions on the left, and the selected item with a reply box, Mark done, Open journey and Send reply on the right." loading="lazy" width="1440" height="900" />
+                </div>
+                <p class="caption"><b>The Inbox.</b> Assigned work, agent questions and mentions in one list. Reply in place, mark it done, or open the journey it belongs to.</p>
+            </div>
+            <div class="prose reveal">
+                <h3 style="margin-bottom:1rem">One queue for the things that need a person.</h3>
+                <p>The signal is the point. Completed work stops being clutter, and nothing interrupts you for what an agent can settle alone.</p>
+                <ul class="checks">
+                    <li><b>Reach you where you are.</b> Browser push on each device you choose, email, and Slack or Microsoft Teams as a direct message with buttons to act on it. Installed as an app, the icon carries the inbox count.</li>
+                    <li><b>Settled once, settled everywhere.</b> Answer in Direct, approve in Slack, or let the alert close: every copy of the notification then says so, and a phone stops asking.</li>
+                    <li><b>Agents ask, and wait.</b> A worker that needs a decision stops and asks. The question lands here with the journey it belongs to.</li>
+                    <li><b>Community in view.</b> Open issues from outside the team that nobody on the team has answered yet, newest first.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═════════ JOURNEYS ═════════ -->
+<section id="journeys" class="alt">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="eyebrow">Rung 1 · Deliver — the journey</span>
             <h2>Work starts in exactly one way.</h2>
             <p>A journey is the life of one issue or blog post, recorded as events on its own stream. It moves through stages. Between every pair of stages sits a gate. Only a gate that allows can move it on.</p>
         </div>
@@ -182,32 +213,78 @@
             <div class="reveal">
                 <div class="frame">
                     <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/journeys?journey=…</span></div>
-                    <img src="assets/img/journey-detail.png" alt="A journey opened in the side panel: Intake and Investigation gates passed, Plan in progress, and a drift notice that the issue was closed while its journey is still active." loading="lazy" width="1440" height="900" />
+                    <img src="assets/img/journey-detail.png" alt="A journey held at its Intake gate: the stage rail, a What is needed from you panel explaining why it stopped and the options, and the gate's evidence broken down by outcome." loading="lazy" width="1440" height="640" />
                 </div>
-                <p class="caption"><b>Drift, caught.</b> This issue was closed on GitHub while its journey was still in Plan. Direct doesn't quietly carry on; it stops the journey and asks whether to abandon or re-open.</p>
+                <p class="caption"><b>Held, and told why.</b> Two remediation attempts didn't resolve the finding, so Direct stopped sending the stage back to the agent. It says what happened, what the options are, and which rules came back with which outcome.</p>
             </div>
         </div>
 
-        <div class="grid g2" style="margin-top:3.5rem">
+        <div class="reveal" style="margin-top:3.5rem">
+            <div class="frame">
+                    <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/journeys</span></div>
+                    <img src="assets/img/journeys.png" alt="The Direct Journeys board: every issue as a card in Intake, Investigation, Plan, Implementation or Release, with the things that need a person called out, and a banner offering a suggestion Direct learned." loading="lazy" width="1440" height="900" />
+                </div>
+            <p class="caption"><b>The Journeys board.</b> Every issue as a card in its stage. Cards that need a person are flagged, cards blocked by reality say so, and a banner appears when Direct has learned something about how these journeys run.</p>
+        </div>
+
+        <div class="split top imgleft" style="margin-top:5rem">
+            <div class="reveal">
+                <div class="frame">
+                    <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/stories/…</span></div>
+                    <img src="assets/img/story.png" alt="A story in Direct: description, canvas, event model, design, investigation and issues tabs, with a conversation panel where Muse answers when mentioned." loading="lazy" width="1440" height="900" />
+                </div>
+                <p class="caption"><b>A story.</b> The description on the left feeds an event model and a design. The conversation on the right is where people, and Muse, shape it.</p>
+            </div>
+            <div class="prose reveal">
+                <h3 style="margin-bottom:1rem">Shape it before it is work.</h3>
+                <p>Not everything starts as a clean issue. A <strong>story</strong> is where a capability gets shaped with people and <strong>Muse</strong> until it is ready for its journey: description, canvas, event model, design and investigation.</p>
+                <ul class="checks">
+                    <li><b>Talk it through.</b> Invite people in. Muse answers when mentioned, or on every message if you prefer.</li>
+                    <li><b>Generate from the description.</b> Update the event model, or generate a design, from what is written.</li>
+                    <li><b>Marking it ready writes the issues.</b> The agent attaches the designs you picked to the issues they belong to, then the story starts its journey.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="split top" style="margin-top:5rem">
+            <div class="prose reveal">
+                <h3 style="margin-bottom:1rem">Reviewed where the work is.</h3>
+                <p>Every pull request across the tracked repositories is mirrored and kept current by webhooks. Read the change, the checks and the merge decisions without leaving Direct.</p>
+                <ul class="checks">
+                    <li><b>Completed work finds its issues.</b> A pull request is associated with the issues it covers and marks them for review.</li>
+                    <li><b>Accepting merges it.</b> A person accepts the pull request in Direct and it merges through the GitHub API.</li>
+                    <li><b>Move to journey.</b> A pull request that arrived on its own can be brought into a journey and its gates.</li>
+                </ul>
+            </div>
+            <div class="reveal">
+                <div class="frame">
+                    <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/pull-requests</span></div>
+                    <img src="assets/img/pull-requests.png" alt="The Pull requests page: a filterable list of open pull requests and the selected pull request with Overview, Merge decisions and Resource usage tabs and the diff." loading="lazy" width="1440" height="900" />
+                </div>
+                <p class="caption"><b>Pull requests.</b> The list on the left, the selected change on the right, with the diff, merge decisions and what the work cost.</p>
+            </div>
+        </div>
+
+        <div class="grid g2" style="margin-top:5rem">
             <div class="card reveal">
                 <span class="k">Reality check</span>
                 <h3>Journeys stay honest against what actually happened.</h3>
                 <p>Every 15 minutes, and whenever a journey changes, Direct compares the journey's record with the facts of the work. A mismatch becomes <strong style="color:var(--text-strong)">drift</strong> and stops the journey advancing: subject closed, a pull request merged before Release, a worker that failed without finishing, a publication taken down, or governance that changed under it.</p>
             </div>
             <div class="card reveal">
-                <span class="k">Two journeys today</span>
-                <h3>Issues and blog posts share one engine.</h3>
-                <p>The issue journey runs <span class="mono hl">Intake → Investigation → Plan → Implementation → Release</span>. The blog journey runs <span class="mono hl">Brief → Draft → Editorial review → Publish</span>. Same gates, same board, same designer.</p>
+                <span class="k">Five journey types</span>
+                <h3>One engine for issues, stories, deliveries, posts and fixes.</h3>
+                <p>The issue journey runs <span class="mono hl">Intake → Investigation → Plan → Implementation → Release</span>. Stories, deliveries, blog posts and operations actions each have their own stages and gates. Same engine, same board, same designer.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- ═════════ ASSURANCE ═════════ -->
-<section id="assurance" class="alt">
+<section id="assurance">
     <div class="wrap">
         <div class="section-head reveal">
-            <span class="eyebrow">02 · Assure — the assurance engine</span>
+            <span class="eyebrow">Assure — gates on every rung</span>
             <h2>A gate decides. Evidence and rules explain why.</h2>
             <p>A gate collects every rule bound to it, evaluates each against the recorded evidence, maps each finding to an outcome, and takes the most restrictive one. Your organization writes the rules. You can read, simulate and version them.</p>
         </div>
@@ -227,9 +304,9 @@
             <div class="reveal">
                 <div class="frame">
                     <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/adlc-designer</span></div>
-                    <img src="assets/img/designer-implementation.png" alt="The ADLC / Journey Designer showing gate G04, Implementation quality, with its policy and the rules bound to it: Build and tests pass, Static analysis, Intent satisfied, Plan conformance." loading="lazy" width="1440" height="1000" />
+                    <img src="assets/img/designer-gate.png" alt="The ADLC / Journey Designer showing gate G04, Implementation quality, with a rule palette on the left, the gate policy in the middle and its settings on the right." loading="lazy" width="1440" height="900" />
                 </div>
-                <p class="caption"><b>The ADLC / Journey Designer.</b> Gate G04 — Implementation quality — with 16 required rules. Deterministic checks, Roslyn analysis and LLM judgement sit in one policy.</p>
+                <p class="caption"><b>The ADLC / Journey Designer.</b> Gate G04, Implementation quality, with 16 required rules, a palette of 37 reusable rules and the validate, simulate, review, approve, activate path along the top. Deterministic checks, Roslyn analysis and LLM judgement sit in one policy.</p>
             </div>
         </div>
 
@@ -242,7 +319,7 @@
                             <tr><td colspan="3" class="gate-label" style="border:0">G01 · Intake</td></tr>
                             <tr><td>Security screening</td><td class="ev">Deterministic</td><td><span class="tag review">Human review</span></td></tr>
                             <tr><td>Spam and solicitation</td><td class="ev">LLM</td><td><span class="tag block">Block</span></td></tr>
-                            <tr><td>Actionable issue</td><td class="ev">LLM</td><td><span class="tag remediate">Remediation</span></td></tr>
+                            <tr><td>Actionable</td><td class="ev">LLM</td><td><span class="tag remediate">Remediation</span></td></tr>
                             <tr><td colspan="3" class="gate-label" style="border:0">G03 · Plan quality</td></tr>
                             <tr><td>Unplanned scope</td><td class="ev">LLM</td><td><span class="tag explain">Explanation</span></td></tr>
                             <tr><td>Breaking changes planned</td><td class="ev">LLM</td><td><span class="tag review">Human review</span></td></tr>
@@ -250,7 +327,7 @@
                             <tr><td colspan="3" class="gate-label" style="border:0">G04 · Implementation quality</td></tr>
                             <tr><td>Build and tests pass</td><td class="ev">Deterministic</td><td><span class="tag remediate">Remediation</span></td></tr>
                             <tr><td>Static analysis</td><td class="ev">Roslyn</td><td><span class="tag remediate">Remediation</span></td></tr>
-                            <tr><td>Tests not weakened</td><td class="ev">LLM</td><td><span class="tag review">Human review</span></td></tr>
+                            <tr><td>Tests not weakened</td><td class="ev">LLM</td><td><span class="tag block">Block</span></td></tr>
                             <tr><td>Security scan</td><td class="ev">External tool</td><td><span class="tag block">Block</span></td></tr>
                             <tr><td>Review policy</td><td class="ev">Composite</td><td><span class="tag review">Human review</span></td></tr>
                             <tr><td colspan="3" class="gate-label" style="border:0">G05 · Release</td></tr>
@@ -258,7 +335,7 @@
                         </tbody>
                     </table>
                 </div>
-                <p class="caption"><b>Excerpt of our own active governance</b> — 42 rules and 37 bindings across 5 gates for the issue journey.</p>
+                <p class="caption"><b>Excerpt of our own active governance</b> — 37 rule bindings across the 5 gates of the issue journey, read from the Designer.</p>
             </div>
             <div class="prose reveal">
                 <h3 style="margin-bottom:1rem">Six kinds of evaluator. Pick the cheapest one that can decide.</h3>
@@ -298,11 +375,30 @@
             <div class="card reveal"><span class="k">Validate + simulate</span><h3>Break it on a whiteboard, not in a release.</h3><p>Validation rejects unreachable stages, rule cycles, bindings with no evidence source and outcome maps that let "unknown" allow. Simulation runs a gate against real or typed-in evidence and never calls a model.</p></div>
             <div class="card reveal"><span class="k">Scopes + provenance</span><h3>Override in one area without changing everywhere.</h3><p>Product and Content can override a rule's parameters. Each value shows whether it is inherited, overridden, local or excluded, so you always know where a setting came from.</p></div>
         </div>
+
+        <div class="split top imgleft" style="margin-top:4rem">
+            <div class="reveal">
+                <div class="frame">
+                    <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/adlc-designer</span></div>
+                    <img src="assets/img/designer-simulate.png" alt="The Simulate dialog in the Journey Designer: choose a gate, simulate against an example situation or a real issue, toggle which evidence exists, and run." loading="lazy" width="1440" height="900" />
+                </div>
+                <p class="caption"><b>Simulate.</b> Pick a gate, then an example situation or a real issue, and switch evidence on and off. It reports which rules apply and what the gate would conclude. Nothing real changes.</p>
+            </div>
+            <div class="prose reveal">
+                <h3 style="margin-bottom:1rem">Try a gate before it decides anything.</h3>
+                <p>The version selector shows the whole history: the active version, drafts and the initial governance Direct shipped. Rule packs have versions too, and a newer pack arrives as a <strong>draft</strong> you can read, validate and simulate. It never changes what is running.</p>
+                <ul class="checks">
+                    <li><b>Five journey types, one designer.</b> Blog post, Issue, Story, Delivery and Operations action each show their own stages and gates.</li>
+                    <li><b>Canvas or list.</b> See the gates as a flow, or every rule bound to every gate as a table.</li>
+                    <li><b>Governance packs and evidence export</b> are available as modules: starter rule sets to adopt and adapt, and gate decisions with their evidence for reviewers.</li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- ═════════ CLASSIFICATION ═════════ -->
-<section id="classification">
+<section id="classification" class="alt">
     <div class="wrap">
         <div class="section-head reveal">
             <span class="eyebrow">Classification &amp; intake</span>
@@ -337,21 +433,52 @@
 
         <div class="reveal" style="margin-top:3.5rem">
             <div class="frame">
-                <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/backlog</span></div>
-                <img src="assets/img/backlog.png" alt="The Backlog: issues ordered by priority with repository, intent, classification, readiness and a Start Journey button on every row." loading="lazy" width="1440" height="1000" />
-            </div>
-            <p class="caption"><b>The Backlog.</b> Ordered by priority, dragged to reorder, dropped onto each other to group. Classification and readiness sit beside every row, and <b>Start Journey</b> is the only way work begins.</p>
+                    <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/issues</span></div>
+                    <img src="assets/img/issues.png" alt="The Issues page: every issue ordered by priority with labels, readiness and a Start Journey button on each row, and a Deliveries panel on the right collecting related issues." loading="lazy" width="1440" height="900" />
+                </div>
+            <p class="caption"><b>Issues.</b> Every issue from GitHub, from Direct or from a story, ordered by priority. Drag to reorder; drop one onto another to start a delivery. Readiness sits beside each row and <b>Start Journey</b> is the only way work begins. Deliveries collect on the right.</p>
         </div>
     </div>
 </section>
+
+<!-- ═════════ LEARNING ═════════ -->
+<section id="learning">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="eyebrow">Learn · preview</span>
+            <h2>Direct watches what people do. Then it suggests.</h2>
+            <p>Governance written once goes stale. Direct watches how work actually moves, tunes small things by itself with an Undo on each, and for anything that changes how work is governed it only suggests. A person decides.</p>
+        </div>
+        <div class="split top">
+            <div class="prose reveal">
+                <h3 style="margin-bottom:1rem">Evidence for changing a rule, not a hunch.</h3>
+                <p>A gate that asked for a review 78 times, and was approved 78 times with no problem getting through, becomes a suggestion with its evidence: <em>let this gate pass without a review</em>.</p>
+                <ul class="checks">
+                    <li><b>Suggestions come with the why.</b> What Direct saw, what would change, and the choices: propose it for review, not now, or never suggest it again.</li>
+                    <li><b>Loosening needs a second person.</b> A suggestion that would loosen a gate asks for a second reviewer before anything applies.</li>
+                    <li><b>Four things it learns from.</b> Delivery matching, journey patterns, gate outcomes and agent plans.</li>
+                    <li><b>Tuned by itself, undone by you.</b> Small adjustments are listed with why, when and an Undo.</li>
+                </ul>
+            </div>
+            <div class="reveal">
+                <div class="frame">
+                    <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/learning</span></div>
+                    <img src="assets/img/learning.png" alt="The Learning page: tabs for Overview, Delivery matching, Journey patterns, Gate outcomes and Agent plans, summary tiles, and a suggestion to let the plan-quality gate pass without a review with the evidence behind it." loading="lazy" width="1440" height="900" />
+                </div>
+                <p class="caption"><b>Learning.</b> A real suggestion from our own production: the plan-quality gate, seen 78 times with nothing against it, with the evidence and a button to propose the change for review.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!-- ═════════ OPERATIONS ═════════ -->
 <section id="operations" class="alt">
     <div class="wrap">
         <div class="section-head reveal">
-            <span class="eyebrow">03 · Operate — closing the loop with production</span>
-            <h2>From an alert to a finding, before anyone opens a laptop.</h2>
-            <p>A watchdog that finds something wrong has two options: wake someone or be ignored. Direct adds a third. The alert goes to an agent that looks at once, resolves what it can, and hands a person the evidence for the rest.</p>
+            <span class="eyebrow">Rungs 2–5 · Observe, Monitor, Heal, Fix</span>
+            <h2>From an alert to a verified fix, before anyone opens a laptop.</h2>
+            <p>A watchdog that finds something wrong has two options: wake someone or be ignored. Direct adds a third. The alert goes to an agent that looks at once and resolves what it can. For a bug, the diagnosis becomes a governed issue, and the probe that raised the alert confirms the fix landed. Whatever is left reaches a person with the evidence.</p>
         </div>
 
         <div class="reveal">
@@ -360,10 +487,37 @@
                 <div class="pstep"><span class="n">02 · live</span><h4>Deduplicate</h4><p>One alert per fingerprint. A resource down six hours costs one alert and one investigation.</p></div>
                 <div class="pstep"><span class="n">03 · live</span><h4>Investigate</h4><p>A worker with only the operational access you granted: a cluster, a runtime, logs.</p></div>
                 <div class="pstep"><span class="n">04 · live</span><h4>Resolve or hand over</h4><p>Resolved by the agent, or <em>Needs attention</em> with findings attached.</p></div>
-                <div class="pstep planned"><span class="n">05 · direction</span><h4>Fix through a journey</h4><p>The diagnosis becomes an issue that enters a governed journey, gates included.</p></div>
-                <div class="pstep planned"><span class="n">06 · direction</span><h4>Verify in production</h4><p>The same resource probe confirms the fix landed, and the alert closes itself.</p></div>
+                <div class="pstep"><span class="n">05 · live</span><h4>Fix through a journey</h4><p>The diagnosis becomes an issue that enters a governed journey, gates included.</p></div>
+                <div class="pstep"><span class="n">06 · live</span><h4>Verify in production</h4><p>The same resource probe confirms the fix landed, and the alert closes itself.</p></div>
             </div>
-            <div class="legend"><span class="l-live">Live in the product</span><span class="l-planned">Where we're taking it</span></div>
+        </div>
+
+        <div class="split top" style="margin-top:4rem">
+            <div class="prose reveal">
+                <h3 style="margin-bottom:1rem">Healing goes through a gate too.</h3>
+                <p>An agent that can restart a pod can also restart the wrong one. Remediation is an <strong>operations gate</strong>, and what it may do is a policy per action and environment kind, not a prompt.</p>
+                <ul class="checks">
+                    <li><b>Review</b> means an agent proposes and a person approves before it runs.</li>
+                    <li><b>Never</b> means it cannot run, however confident the agent is. Changing data or schema is the example.</li>
+                    <li><b>Every action leaves a record.</b> Recent actions and every action are listed with who asked and what happened.</li>
+                    <li><b>Incidents are public when you say so.</b> Reviewed updates publish to a status page, Statuspage, Cachet, openstatus or a webhook.</li>
+                </ul>
+            </div>
+            <div class="reveal">
+                <div class="rules-wrap">
+                    <table class="rules">
+                        <thead><tr><th>Action</th><th>Policy in production</th></tr></thead>
+                        <tbody>
+                            <tr><td>Restart pod</td><td><span class="tag review">Review</span></td></tr>
+                            <tr><td>Scale out</td><td><span class="tag review">Review</span></td></tr>
+                            <tr><td>Roll back release</td><td><span class="tag review">Review</span></td></tr>
+                            <tr><td>Replay Chronicle partition</td><td><span class="tag review">Review</span></td></tr>
+                            <tr><td>Change data or schema</td><td><span class="tag block">Never</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="caption"><b>Action policies.</b> Our production environment's policies, as shown on the Operations page.</p>
+            </div>
         </div>
 
         <div class="split top" style="margin-top:4rem">
@@ -409,18 +563,18 @@ POST https://&lt;direct&gt;/webhooks/alerts
 <section id="content">
     <div class="wrap">
         <div class="section-head reveal">
-            <span class="eyebrow">04 · Publish — content for every outlet</span>
+            <span class="eyebrow">Publish — content for every outlet</span>
             <h2>What shipped is only half the story.</h2>
             <p>Releases pile up faster than anyone writes about them. Direct treats a blog post like an issue: it has a brief, a draft, an editorial gate and a publication that gets verified. The weekly digest is assembled from what your repositories actually released.</p>
         </div>
 
-        <div class="split">
+        <div class="split imgleft">
             <div class="reveal">
                 <div class="frame">
                     <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/content/digest</span></div>
-                    <img src="assets/img/digest.png" alt="The weekly digest: a drafted summary of the week, extracted themes, and a version-movement table across repositories." loading="lazy" width="1440" height="1000" />
+                    <img src="assets/img/digest.png" alt="The weekly digest: a list of editions, the selected edition's generated description with extracted themes, and an Approve and publish panel." loading="lazy" width="1440" height="900" />
                 </div>
-                <p class="caption"><b>The weekly digest.</b> Themes extracted from the week's releases, a generated description in your voice, and the version movement for every repository. Publish is a button a person presses.</p>
+                <p class="caption"><b>The weekly digest.</b> A description generated from the week's releases, the themes it extracted, and an Approve and publish step that shows exactly what goes to which outlets. Every edition waits for a person.</p>
             </div>
             <div class="prose reveal">
                 <h3 style="margin-bottom:1rem">A journey for words, with gates.</h3>
@@ -442,8 +596,8 @@ POST https://&lt;direct&gt;/webhooks/alerts
         <div class="grid g4" style="margin-top:3.5rem">
             <div class="card outlet reveal"><span class="state live">In product</span><h3>Weekly digest</h3><p>Collected from releases, analysed for themes, reviewed, published.</p></div>
             <div class="card outlet reveal"><span class="state live">In product</span><h3>Blog</h3><p>Brief to verified publication with editorial gates.</p></div>
-            <div class="card outlet reveal"><span class="state building">In product · early</span><h3>Talks &amp; LinkedIn</h3><p>Talk material and discovered posts with a suggested comment for each.</p></div>
-            <div class="card outlet reveal"><span class="state planned">Direction</span><h3>More outlets</h3><p>Newsletter, release notes, docs and social channels as targets for the same content.</p></div>
+            <div class="card outlet reveal"><span class="state live">In product</span><h3>Content plan &amp; LinkedIn</h3><p>A weekly plan aligned with the roadmap and what shipped. Every post records its brief, voice revision and model, and discloses AI assistance where the channel requires it.</p></div>
+            <div class="card outlet reveal"><span class="state building">In product · early</span><h3>Talks &amp; engagement</h3><p>Talk material, and conversations worth joining with a suggested reply grounded in the product's public pages. A person decides.</p></div>
         </div>
     </div>
 </section>
@@ -452,9 +606,9 @@ POST https://&lt;direct&gt;/webhooks/alerts
 <section id="strategy" class="alt">
     <div class="wrap">
         <div class="section-head reveal">
-            <span class="eyebrow">05 · Steer — vision, roadmap, order</span>
+            <span class="eyebrow">Steer — products, vision, roadmap, order</span>
             <h2>Agents follow direction. Somebody has to set it.</h2>
-            <p>A backlog of 800 issues has no strategy. Direct keeps the vision next to the work, so triage and planning are grounded in what you're trying to build.</p>
+            <p>A backlog of two thousand issues has no strategy. Direct keeps the vision next to the work, so triage and planning are grounded in what you're trying to build.</p>
         </div>
         <div class="grid g3">
             <div class="card reveal"><span class="k">Vision</span><h3>Written down, and used.</h3><p>Associate repositories with a vision. Triage and planning read it, and a vision guard checks changes against it.</p></div>
@@ -466,15 +620,85 @@ POST https://&lt;direct&gt;/webhooks/alerts
             <div class="card reveal"><span class="k">Capacity</span><h3>Least-burnt account first.</h3><p>Work draws from a pool of AI accounts within a concurrency bound, and usage is tracked per provider and model.</p></div>
             <div class="card reveal"><span class="k">Steering</span><h3>Watch a worker. Talk back to it.</h3><p>A running job streams its console into Direct. Send text into the session to steer it, or read the retained console after it ends.</p></div>
         </div>
-        <div class="reveal" style="margin-top:3rem">
-            <div class="frame">
-                <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/global</span></div>
-                <img src="assets/img/dashboard.png" alt="The Direct dashboard at a glance: workers running, awaiting your review, alerts needing attention, builds red, open issues, failed partitions." loading="lazy" width="1440" height="330" />
+        <div class="split top imgleft" style="margin-top:4rem">
+            <div class="reveal">
+                <div class="frame">
+                    <div class="frame-bar"><i></i><i></i><i></i><span class="url">app.cratis.direct/product/products</span></div>
+                    <img src="assets/img/products.png" alt="The Products page: each registered product as a card with its repositories, journeys and what needs you, a Register a product card, and a banner about repositories that belong to no product." loading="lazy" width="1440" height="900" />
+                </div>
+                <p class="caption"><b>Products.</b> Each product with its repositories, journeys and what needs you. Repositories that belong to no product are called out, because their issues can't reach a digest, a vision check or an alert route.</p>
             </div>
-            <p class="caption"><b>At a glance.</b> What's running, what awaits you, what's red. Work that finished stops being clutter.</p>
+            <div class="prose reveal">
+                <h3 style="margin-bottom:1rem">A product is the unit everything else hangs on.</h3>
+                <p>A product ties together its repositories, environments, vision, public pages and team. Every module works through it, so a release, an alert or a post always knows whose it is.</p>
+                <ul class="checks">
+                    <li><b>Failures find their owner.</b> A failed partition or an alert is traced back to a product and filed where its code lives.</li>
+                    <li><b>Deliveries cross repositories.</b> Issues from any repository that ship together are matched to new issues automatically, and can be worked in order with gates.</li>
+                    <li><b>Work can span repositories.</b> An issue names the others it has to be worked across; every agent gets them and is told what it may do in each.</li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>
+
+<!-- ═════════ REACH ═════════ -->
+<section id="reach">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="eyebrow">Connect</span>
+            <h2>Reach it from your editor. Run workers on your own machine.</h2>
+            <p>Direct is not only a website. The people and agents who work with it do so from wherever they already are.</p>
+        </div>
+        <div class="grid g2">
+            <div class="card reveal"><span class="k">MCP + REST</span><h3>Your editor's agent can use Direct.</h3><p>Member tools file plain repository issues with likely-duplicate choices, comment and label them, and ask what is waiting on you (<code>direct_my_work</code>, or <code>GET /v1/me/work</code>). Personal access tokens carry scopes such as <code>direct:read</code> and <code>direct:work</code>, every write needs an idempotency key, and each call is recorded with the verified member, the client and the protocol.</p></div>
+            <div class="card reveal"><span class="k">Direct Agent Runner</span><h3>When the cluster isn't the right place.</h3><p>Run agent workers on your own machine, in your own Docker, when they need more CPU or memory, a fast local disk or a network you control. A maintainer approves the runner with a short code. For each piece of work Direct picks the runner open to whoever asked and with the most room, and the cluster when none has more. The runner only ever dials out.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═════════ MODULES ═════════ -->
+<section id="modules" class="alt">
+    <div class="wrap">
+        <div class="section-head reveal">
+            <span class="eyebrow">Modules</span>
+            <h2>Add what your organization needs.</h2>
+            <p>Product is included. Everything else is a module: install it, try it, or join a preview. Its pages and settings appear the moment it is active. This is the catalogue as it stands in the product today.</p>
+        </div>
+        <div class="legend reveal" style="margin:0 0 1.5rem"><span class="state live">Included · Installed</span><span class="state building">Available</span><span class="state preview">Preview</span><span class="state planned">Coming</span></div>
+        <div class="mods">
+            <div class="lane reveal"><h4>Organization &amp; product</h4>
+                <div class="mod"><div><b>Organization</b><span class="state live">Included</span></div><p>People, teams and invitations, agents, AI providers and pools, decision engines, integrations, governance and notifications.</p></div>
+                <div class="mod"><div><b>Products, vision &amp; roadmap</b><span class="state live">Included</span></div><p>Products with repositories, environments, public pages and a vision. Roadmap and decisions per product.</p></div>
+                <div class="mod"><div><b>Deliver</b><span class="state live">Included</span></div><p>Backlog, stories, journeys, work, pull requests, failed builds, inbox and dashboards.</p></div>
+                <div class="mod"><div><b>Assure</b><span class="state live">Included</span></div><p>Gates, rules, six evaluator kinds, the Journey Designer and reality checks.</p></div>
+                <div class="mod"><div><b>GitHub provider</b><span class="state live">Included</span></div><p>A mirror of organizations, repositories, issues, pull requests, checks and builds.</p></div>
+            </div>
+            <div class="lane reveal"><h4>Operate</h4>
+                <div class="mod"><div><b>Infrastructure &amp; Signals</b><span class="state live">Installed</span></div><p>Products, environments and resources. Prometheus, Loki, Tempo and HTTP signals.</p></div>
+                <div class="mod"><div><b>Production Monitoring</b><span class="state live">Installed</span></div><p>Probes, alerts and incidents with public status updates.</p></div>
+                <div class="mod"><div><b>Auto-heal</b><span class="state live">Installed</span></div><p>An agent investigates every alert and remediates through the operations gate.</p></div>
+                <div class="mod"><div><b>Autonomous bug fixing</b><span class="state live">Installed</span></div><p>A diagnosis becomes a governed issue, is fixed, released, and verified by the probe.</p></div>
+            </div>
+            <div class="lane reveal"><h4>Govern</h4>
+                <div class="mod"><div><b>Governance packs</b><span class="state building">Available</span></div><p>Starter rule sets to adopt and adapt.</p></div>
+                <div class="mod"><div><b>Evidence export</b><span class="state building">Available</span></div><p>Gate decisions and evidence for reviewers and auditors.</p></div>
+                <div class="mod"><div><b>Learning loop</b><span class="state preview">Preview</span></div><p>Recurring failures and overrides propose rule changes.</p></div>
+            </div>
+            <div class="lane reveal"><h4>Content, marketing &amp; sales</h4>
+                <div class="mod"><div><b>Content Studio</b><span class="state live">Installed</span></div><p>The blog journey from Brief to Publish, with voices and guidance.</p></div>
+                <div class="mod"><div><b>Marketing</b><span class="state live">Installed</span></div><p>A content plan, LinkedIn publishing and a posting plan.</p></div>
+                <div class="mod"><div><b>Onboarding</b><span class="state live">Installed</span></div><p>Get the organizations of a product you run for customers in the door: invitations, sign-ups, trials, seats, approvals and the emails around them.</p></div>
+                <div class="mod"><div><b>Sales</b><span class="state preview">Preview</span></div><p>Who is evaluating, what they asked for, and where each conversation stands.</p></div>
+            </div>
+            <div class="lane reveal"><h4>Platform</h4>
+                <div class="mod"><div><b>Workflows</b><span class="state preview">Preview</span></div><p>Schedules, reusable actions with receipts, and chains.</p></div>
+                <div class="mod"><div><b>GitLab &amp; Azure DevOps</b><span class="state planned">Coming</span></div><p>More issue and code providers through the same adapters.</p></div>
+                <div class="mod"><div><b>Agents anywhere</b><span class="state planned">Coming</span></div><p>Direct as claim authority for agents running elsewhere over MCP.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!-- ═════════ ARCHITECTURE ═════════ -->
 <section id="trust">
@@ -528,7 +752,7 @@ POST https://&lt;direct&gt;/webhooks/alerts
                     <tr><td>Starting point</td><td>Backlog to pull request</td><td>Pipeline events to audit trail</td><td class="us">Intent to journey, up to a ceiling you set</td></tr>
                     <tr><td>How work is allowed</td><td>Labels, approval gates, PR review</td><td>Controls checked after the fact</td><td class="us">Gates evaluate rules against evidence before the next stage</td></tr>
                     <tr><td>Uncertainty</td><td>Agent escalates when unsure</td><td>Compliance status</td><td class="us">Unknown is never a pass, by construction</td></tr>
-                    <tr><td>Production</td><td>Rarely in scope</td><td>Runtime monitoring for drift</td><td class="us">Alerts trigger agent investigations with scoped access</td></tr>
+                    <tr><td>Production</td><td>Rarely in scope</td><td>Runtime monitoring for drift</td><td class="us">Alerts trigger agent investigations with scoped access, remediation through a gate, and a fix verified by the probe</td></tr>
                     <tr><td>Beyond code</td><td>—</td><td>—</td><td class="us">Content journeys, digest, roadmap, chains</td></tr>
                     <tr><td>Rules live in</td><td>Repo config</td><td>Policy engine</td><td class="us">Versioned governance: draft, simulate, review, activate</td></tr>
                 </tbody>
@@ -544,38 +768,38 @@ POST https://&lt;direct&gt;/webhooks/alerts
         <div class="section-head reveal">
             <span class="eyebrow">Roadmap</span>
             <h2>Where it is, and where it's going.</h2>
-            <p>Direct runs our own engineering today. The "next" and "later" columns are direction, not commitments, and dates move.</p>
+            <p>Direct runs our own engineering today. The columns follow the module catalogue: what is installed, what you can try, and what is on the way. "Coming" is direction, not a commitment, and dates move.</p>
         </div>
         <div class="roadmap">
             <div class="rcol now reveal">
-                <h3><span class="dot"></span> Now</h3><span class="when">running in production</span>
+                <h3><span class="dot"></span> Now</h3><span class="when">installed, running in production</span>
                 <ul>
-                    <li><b>Journeys and gates</b> for issues and blog posts</li>
-                    <li><b>ADLC / Journey Designer</b> with versioned governance, validation and simulation</li>
-                    <li><b>Classification and screening</b> on every issue and comment</li>
-                    <li><b>Alerts and resource probes</b> with agent investigation</li>
-                    <li><b>Weekly digest</b>, blog, chains and roadmap plans</li>
-                    <li><b>Worker isolation</b> on Docker and Kubernetes</li>
+                    <li><b>Journeys and gates</b> for issues, stories, deliveries, blog posts and operations actions</li>
+                    <li><b>Journey Designer</b> with versioned governance, validation and simulation</li>
+                    <li><b>Today, inbox and notifications</b> by push, email, Slack and Microsoft Teams</li>
+                    <li><b>The ladder to Fix:</b> signals, alerts, auto-heal and autonomous bug fixing</li>
+                    <li><b>Content Studio, weekly digest, Marketing</b> and LinkedIn publishing</li>
+                    <li><b>Onboarding</b> for the customers of a managed product</li>
+                    <li><b>Workers</b> on Docker, Kubernetes or your own machine, and MCP and REST access</li>
                 </ul>
             </div>
             <div class="rcol reveal">
-                <h3><span class="dot"></span> Next</h3><span class="when">direction</span>
+                <h3><span class="dot"></span> Next</h3><span class="when">available or in preview</span>
                 <ul>
-                    <li><b>Alert → journey.</b> An investigation's diagnosis becomes a governed issue in one step</li>
-                    <li><b>Environment-aware investigations</b> with per-environment access and approval</li>
-                    <li><b>Governance packs</b> — starter rule sets you can adopt and adapt</li>
-                    <li><b>Evidence export</b> for reviewers and auditors</li>
+                    <li><b>Governance packs</b> (available): starter rule sets you can adopt and adapt</li>
+                    <li><b>Evidence export</b> (available) for reviewers and auditors</li>
+                    <li><b>Learning loop</b> (preview): recurring failures and overrides propose rule changes</li>
+                    <li><b>Workflows</b> (preview): schedules, reusable actions with receipts, and chains</li>
+                    <li><b>Sales</b> (preview): who is evaluating, and where each conversation stands</li>
                     <li><b>Wider watchdog coverage</b> as the internal checks are re-enabled</li>
                 </ul>
             </div>
             <div class="rcol reveal">
-                <h3><span class="dot"></span> Later</h3><span class="when">exploring</span>
+                <h3><span class="dot"></span> Later</h3><span class="when">coming</span>
                 <ul>
-                    <li><b>Fix verified in production</b> by the same probe that raised the alert</li>
-                    <li><b>Feedback loop into rules.</b> Drift and overrides propose rule changes for review</li>
-                    <li><b>Other issue and code providers</b> through the same provider-neutral commands</li>
-                    <li><b>More content outlets</b> from one brief</li>
-                    <li><b>Customer installations</b> as first-class environments</li>
+                    <li><b>GitLab and Azure DevOps</b> through the same provider-neutral adapters</li>
+                    <li><b>Agents anywhere:</b> Direct as claim authority for agents running elsewhere over MCP</li>
+                    <li><b>More content outlets</b> from one brief: newsletter, release notes, docs and more social channels</li>
                 </ul>
             </div>
         </div>
@@ -590,10 +814,11 @@ POST https://&lt;direct&gt;/webhooks/alerts
             <h2>Where Direct stops.</h2>
         </div>
         <div class="reveal">
-            <div class="limit"><div><b>It's GitHub-first.</b><p>Issues, pull requests and identity come from GitHub. The internals are provider-neutral, but no other provider ships yet.</p></div></div>
+            <div class="limit"><div><b>It's GitHub-first.</b><p>Issues, pull requests and identity come from GitHub. The internals are provider-neutral, and GitLab and Azure DevOps are coming through the same adapters, but no other provider ships yet.</p></div></div>
             <div class="limit"><div><b>Agents are only as good as the rules you activate.</b><p>A gate that has no applicable rule holds. A weak rule set passes weak work, and Direct will show you the verdict either way.</p></div></div>
             <div class="limit"><div><b>LLM rules are judgement, not proof.</b><p>They carry a confidence threshold and never turn an unclear answer into a pass. Where you need proof, bind a deterministic or tool rule.</p></div></div>
             <div class="limit"><div><b>Production access is opt-in.</b><p>Without an operational grant, an alert investigation can only reason from the alert. Some internal watchdog checks are currently paused while we harden them.</p></div></div>
+            <div class="limit"><div><b>Some modules are previews.</b><p>Learning loop, Sales and Workflows are in preview, and Agents anywhere is still coming. The module catalogue marks every one, and the Roadmap follows it.</p></div></div>
             <div class="limit"><div><b>It's coming soon.</b><p>Direct runs our own work today. Access opens to others in stages, so the login below will only admit accounts we've enabled.</p></div></div>
         </div>
     </div>
