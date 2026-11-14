@@ -16,7 +16,7 @@
             o.setAttribute('aria-pressed', String(active));
         });
 
-        document.querySelectorAll('.plan').forEach(plan => {
+        document.querySelectorAll('.plan:not([data-contact])').forEach(plan => {
             const monthly = Number(plan.dataset.monthly);
             const discount = Number(plan.dataset.yearlyDiscount);
             const yearlyTotal = monthly * 12 * (100 - discount) / 100;

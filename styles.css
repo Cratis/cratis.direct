@@ -404,7 +404,7 @@ footer { padding: 3rem 0 4rem; border-top: 1px solid var(--border-soft); font-si
 .toggle-option .save { font-family: var(--mono); font-size: .66rem; letter-spacing: .06em; text-transform: uppercase; margin-left: .35rem; color: var(--green); }
 .toggle-option.active .save { color: #fff; }
 .plans-section { padding-top: 2rem; }
-.plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; align-items: stretch; }
+.plans { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; align-items: stretch; }
 .plan { position: relative; display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem 1.75rem; }
 .plan.featured { border-color: var(--accent-line); box-shadow: 0 0 0 1px var(--accent-line), 0 12px 40px rgba(37,99,235,.18); }
 .plan h2 { font-size: 1.5rem; }
@@ -420,7 +420,7 @@ footer { padding: 3rem 0 4rem; border-top: 1px solid var(--border-soft); font-si
 .plan li::before { content: "✓"; position: absolute; left: 0; color: var(--green); font-weight: 700; }
 .plans-note { margin-top: 2rem; text-align: center; color: var(--text-dim); font-size: .9rem; }
 .nav-links a.link[aria-current="page"] { color: var(--text-strong); }
-@media (max-width: 1024px) { .plans { grid-template-columns: minmax(0, 1fr); max-width: 30rem; margin-inline: auto; } .plan-for { min-height: 0; } }
+@media (max-width: 1180px) { .plans { grid-template-columns: minmax(0, 1fr); max-width: 30rem; margin-inline: auto; } .plan-for { min-height: 0; } }
 
 /* ── Vision page ─────────────────────────────────────────────────────────── */
 .vision-hero { padding-bottom: 2rem; }
