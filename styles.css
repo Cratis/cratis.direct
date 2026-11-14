@@ -421,3 +421,19 @@ footer { padding: 3rem 0 4rem; border-top: 1px solid var(--border-soft); font-si
 .plans-note { margin-top: 2rem; text-align: center; color: var(--text-dim); font-size: .9rem; }
 .nav-links a.link[aria-current="page"] { color: var(--text-strong); }
 @media (max-width: 1180px) { .plans { grid-template-columns: minmax(0, 1fr); max-width: 30rem; margin-inline: auto; } .plan-for { min-height: 0; } }
+
+/* ── Vision page ─────────────────────────────────────────────────────────── */
+.vision-hero { padding-bottom: 2rem; }
+.vision-hero h1 { max-width: 20ch; }
+.vision-body { padding-top: 3rem; }
+.vision-block { margin-bottom: 2.75rem; }
+.vision-block h2 { font-size: clamp(1.35rem, 2.4vw, 1.75rem); margin-bottom: 1rem; }
+.vision-block p { color: var(--text); font-size: 1.05rem; line-height: 1.8; }
+.vision-block p strong { color: var(--text-strong); font-weight: 600; }
+.vision-signoff { margin-top: 4rem; padding-top: 2.5rem; border-top: 1px solid var(--border); }
+.vision-signoff-text { color: var(--text); font-size: 1.1rem; line-height: 1.8; font-style: italic; max-width: 36rem; margin: 0 0 2rem; }
+.signature-block { display: flex; flex-wrap: wrap; gap: 3rem; }
+.signature-card { max-width: 280px; }
+.signature-image { height: 60px; width: auto; margin: 0 0 .5rem; }
+.signature-name { font-weight: 700; color: var(--text-strong); margin: 0; }
+.signature-title { color: var(--text-dim); font-size: .85rem; margin: .15rem 0 0; }
